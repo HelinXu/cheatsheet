@@ -33,36 +33,40 @@ pose.py                                                                100% 2093
 main.py                                                                100% 4496    96.4KB/s   00:00
 ```
 
-[SCP](https://linux.die.net/man/1/scp) is a great resource for copying files from server to server. Unfortunately,
-I use it infrequently enough that I never remember the syntax.
-
----
-
 ### Local to Remote
 
 - Copy file from the local host to a remote host
+
 `scp /path/to/myfile.txt username@remotehost:/some/remote/directory`
 
 - Copy files from from the local host to your home directory on the remote host
+
 `scp /path/to/myfile.txt /path/to/myotherfile.txt username@remotehost:~`
 
 - Copy file from the local host to a remote host using port 2264
+ 
 `scp -P 2264 /path/to/myfile.txt username@remotehost:/some/remote/directory`
 
 - Copy directory from the local host to a remote host
+
 `scp -r /some/local/directory/ username@remotehost:/some/remote/directory/`
 
----
+
 
 ### Remote to Local
+
 - Copy file from a remote host to the local host
+
 `scp username@remotehost:/path/to/myfile.txt /some/local/path/to/myfile.txt`
 
 - Copy file from the remote host to your current directory on the local host
+
 `scp username@remotehost:/path/to/myfile.txt .`
 
----
+
 
 ### Remote to Remote
+
 - Copy file from one remote host to another
+
 `scp username@remotehost:/some/remote/directory/myfile.txt username@otherremotehost:/some/remote/directory/`
