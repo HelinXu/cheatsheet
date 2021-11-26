@@ -7,3 +7,9 @@ logging.basicConfig(
                 #a是追加模式，默认如果不写的话，就是追加模式
                 format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                    )
+
+logging.basicConfig(
+                level=logging.DEBUG,
+                filename='./main.log',
+                filemode='a',
+                format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
