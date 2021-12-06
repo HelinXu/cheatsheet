@@ -29,6 +29,7 @@ cfg = get_parser()
 # Example 02
 ###########################################
     parser = argparse.ArgumentParser()
+    parser.add_argument('--train', dest='train', action='store_true', help='Turn on training mode. Default mode is test.')
     parser.add_argument('--data_root', help='path to the input dataset files', default='../dataset/scannetv2')
     parser.add_argument('--result_root', help='path to the predicted results', default='exp/scannetv2/pointgroup/pointgroup_run1_scannet/result/epoch384_nmst0.3_scoret0.09_npointt100')
     parser.add_argument('--room_name', help='room_name', default='scene0000_00')
@@ -37,3 +38,4 @@ cfg = get_parser()
     opt = parser.parse_args()
 
     print(opt.room_name)
+    print(opt.train) # True/False
