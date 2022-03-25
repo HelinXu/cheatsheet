@@ -15,3 +15,23 @@
     1. will init conda in .zshrc
 9. git config
 10. set up alias
+
+
+```shell
+alias myip="curl http://ipecho.net/plain; echo"
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+alias hs='history | grep'
+alias vpnrun='cd ~/Downloads/Clash/; ./cfw' # run my vpn
+alias cdcd='cd ~/Code/'
+
+
+plugins=(
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    conda-zsh-completion
+    )
+
+
+ZSH_THEME="ys"
+```
