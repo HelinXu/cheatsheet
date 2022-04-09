@@ -27,9 +27,9 @@ alias cdcd='cd ~/Code/'
 
 plugins=(
     git
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-    conda-zsh-completion
+    zsh-syntax-highlighting # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+    zsh-autosuggestions # git clone https://github.com/zsh-users/zsh-autosuggestions.git
+    conda-zsh-completion # git clone https://github.com/esc/conda-zsh-completion.git
     )
 
 
